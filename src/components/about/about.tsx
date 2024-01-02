@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 
 import { SectionHeader } from "components/common/section-header";
-import { IMAGES_PATH } from "shared/consts";
+import { FILES_PATH, IMAGES_PATH } from "shared/consts";
 import { COLORS } from "theme/colors";
 
 import { AvatarStyled, ButtonWrapper } from "./about.styled";
@@ -40,7 +40,11 @@ export const About = () => {
               {t("aboutDescription")}
             </Typography>
             <ButtonWrapper data-aos="fade-in" data-aos-delay="300" mt={6}>
-              <Button startIcon={<FaDownload />} variant="contained">
+              <Button
+                onClick={() => window.open(`${FILES_PATH}/Mateusz_Piotrowicz_resume.pdf`)}
+                startIcon={<FaDownload />}
+                variant="contained"
+              >
                 {t("aboutDownload")}
               </Button>
             </ButtonWrapper>

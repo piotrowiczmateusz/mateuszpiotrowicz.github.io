@@ -35,7 +35,7 @@ export const ContactForm = () => {
                 helperText={errors[name] && helperText}
                 label={label}
                 onChange={onChange}
-                sx={{ "& > .MuiInputBase-root": { minHeight: name === "message" ? "250px" : "auto" } }}
+                sx={{ "& > .MuiInputBase-root": { alignItems: "flex-start", minHeight: name === "message" ? "250px" : "auto" } }}
                 value={value}
                 variant="filled"
               />

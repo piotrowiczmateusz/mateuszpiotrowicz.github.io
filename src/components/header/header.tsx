@@ -3,7 +3,7 @@ import React from "react";
 import { Spiral as Hamburger } from "hamburger-react";
 import { FaLinkedin } from "react-icons/fa";
 
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 
 import { IMAGES_PATH, LINKEDIN_URL } from "shared/consts";
 
@@ -11,6 +11,7 @@ import {
   HamburgerWrapper,
   HeaderInner,
   HeaderWrapper,
+  IconsWrapper,
   LangSwitch,
   Logo,
   LogoColor,
@@ -50,7 +51,7 @@ export const Header = () => {
                 </li>
               ))}
             </ul>
-            <Box display="flex">
+            <IconsWrapper>
               <SocialLink
                 href={LINKEDIN_URL}
                 rel="noreferrer noopener"
@@ -59,9 +60,9 @@ export const Header = () => {
                 <FaLinkedin />
               </SocialLink>
               <LangSwitch onClick={handleChangeLang} type="button">
-                <img alt={otherLang} height="30" src={`${IMAGES_PATH}${otherLang}.png`} width="30" />
+                <img alt={otherLang} height="30" src={`${IMAGES_PATH}/${otherLang}.png`} width="30" />
               </LangSwitch>
-            </Box>
+            </IconsWrapper>
           </Nav>
           <HamburgerWrapper onClick={handleHamburgerClick}>
             <Hamburger toggled={isOpen} />

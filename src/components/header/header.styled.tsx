@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Box } from "@mui/material";
+
 import { MOBILE, ZLAYERS } from "shared/consts";
 import { COLORS } from "theme/colors";
 
@@ -152,3 +154,11 @@ export const LangSwitch = styled.button`
   text-transform: uppercase;
   width: 30px;
 `;
+
+export const IconsWrapper = styled(Box)`
+  display: flex;
+
+  @media ${MOBILE} {
+    margin-top: 32px;
+  }
+`
