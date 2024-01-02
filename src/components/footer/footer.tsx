@@ -4,6 +4,8 @@ import { Box, Typography } from "@mui/material";
 
 export const Footer = () => (
   <Box alignItems="center" display="flex" id="footer" justifyContent="center" mt={8} p={4}>
-    <Typography variant="caption">Copyright &copy; Mateusz Piotrowicz</Typography>
+    <Typography variant="caption">
+      Copyright &copy; Mateusz Piotrowicz {new Date().getFullYear()}
+    </Typography>
   </Box>
 )

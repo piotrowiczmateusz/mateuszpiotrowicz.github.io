@@ -33,7 +33,7 @@ export const useHeader = () => {
   const changeNavBg = () => setIsNavBackground(window.scrollY >= 100);
 
   const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    e: React.MouseEvent<HTMLAnchorElement | HTMLDivElement, MouseEvent>,
     link: string
   ) => {
     e.preventDefault();
@@ -55,6 +55,7 @@ export const useHeader = () => {
   };
 
   const handleChangeLang = () => {
+    setIsOpen(!isOpen);
     i18n.changeLanguage(otherLang);
   };
 

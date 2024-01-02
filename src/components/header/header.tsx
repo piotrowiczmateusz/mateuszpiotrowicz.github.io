@@ -37,7 +37,7 @@ export const Header = () => {
     <HeaderWrapper $isNavBackground={isNavBackground}>
       <Container>
         <HeaderInner>
-          <Logo>
+          <Logo onClick={(e) => handleNavClick(e, "#about")}>
             {t("navLogo1")}
             <LogoColor>{t("navLogo2")}</LogoColor>
           </Logo>

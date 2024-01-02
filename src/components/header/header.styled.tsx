@@ -26,6 +26,7 @@ export const HeaderInner = styled.div`
 
 export const Logo = styled.div`
   align-items: center;
+  cursor: pointer;
   display: flex;
   font-size: 30px;
   font-weight: bold;
