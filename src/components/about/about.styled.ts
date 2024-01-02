@@ -23,6 +23,11 @@ export const AvatarStyled = styled(Avatar)`
 
   @media ${MOBILE} {
     margin: 0 auto 32px;
+
+    && {
+      height: 200px;
+      width: 200px;
+    }
   }
 `;
 

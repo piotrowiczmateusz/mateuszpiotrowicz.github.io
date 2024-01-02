@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 
 import { portfolio } from "./portfolio-data";
 
-const touchOffset = 150;
+const touchOffset = 50;
+const dragOffset = 150;
 
 export const usePortfolio = () => {
   const [active, setActive] = useState(0);
@@ -43,11 +44,11 @@ export const usePortfolio = () => {
     setDragEnd(e.clientX);
 
   const handleDragEnd = () => {
-    if (dragStart - dragEnd > touchOffset) {
+    if (dragStart - dragEnd > dragOffset) {
       handleNext();
     }
 
-    if (dragStart - dragEnd < -touchOffset) {
+    if (dragStart - dragEnd < -dragOffset) {
       handlePrev();
     }
   };
