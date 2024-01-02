@@ -39,6 +39,7 @@ export const useContactForm = () => {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({ mode: "onSubmit" });
 
   const getFormData = (object: { [key: string]: string }) =>
@@ -52,11 +53,16 @@ export const useContactForm = () => {
       const res = await fetch(FORMSPREE_URL, {
         body: getFormData(data),
         method: "POST",
+        mode: "no-cors",
       });
-
-      await res.json();
-
-      toast.success(t("contactSuccess"));
+      if (res) {
+        toast.success(t("contactSuccess"));
+        reset({
+          email: "",
+          message: "",
+          name: "",
+        });
+      }
     } catch (e) {
       toast.error(t("contactError"));
     }

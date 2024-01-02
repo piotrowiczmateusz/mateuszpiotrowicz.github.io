@@ -22,9 +22,8 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       {fields.map(({ helperText, label, name, rules }) => (
-        <Box mb={2}>
+        <Box key={name} mb={2}>
           <Controller
-            key={name}
             control={control}
             name={name}
             render={({ field: { onChange, value } }: ControllerProps) => (
@@ -35,7 +34,12 @@ export const ContactForm = () => {
                 helperText={errors[name] && helperText}
                 label={label}
                 onChange={onChange}
-                sx={{ "& > .MuiInputBase-root": { alignItems: "flex-start", minHeight: name === "message" ? "250px" : "auto" } }}
+                sx={{
+                  "& > .MuiInputBase-root": {
+                    alignItems: "flex-start",
+                    minHeight: name === "message" ? "250px" : "auto"
+                  }
+                }}
                 value={value}
                 variant="filled"
               />

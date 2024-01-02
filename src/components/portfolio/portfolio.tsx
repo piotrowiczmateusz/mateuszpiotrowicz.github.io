@@ -22,7 +22,17 @@ import {
 import { usePortfolio } from "./use-portfolio";
 
 export const Portfolio = () => {
-  const { active, handleNext, handlePrev, setActive, t } = usePortfolio();
+  const { active,
+    handleDragEnd,
+    handleDragMove,
+    handleDragStart,
+    handleNext,
+    handlePrev,
+    handleTouchEnd,
+    handleTouchMove,
+    handleTouchStart,
+    setActive,
+    t } = usePortfolio();
 
   return (
     <Box id="portfolio">
@@ -30,7 +40,14 @@ export const Portfolio = () => {
         <SectionHeader color={COLORS.semiDark} title={t("portfolioTitle")} />
         <PortfolioContainer>
           {portfolio.map(({ name, image, linkName, link }, index) => (
-            <PortfolioItem key={name} $active={active === index}>
+            <PortfolioItem key={name} $active={active === index}
+              onDrag={handleDragMove}
+              onDragEnd={handleDragEnd}
+              onDragStart={handleDragStart}
+              onTouchEnd={handleTouchEnd}
+              onTouchMove={handleTouchMove}
+              onTouchStart={handleTouchStart}
+            >
               <PortfolioImageWrapper data-aos="fade-up">
                 <PortfolioImage src={`${IMAGES_PATH}/${image}`} />
               </PortfolioImageWrapper>
@@ -70,7 +87,8 @@ export const Portfolio = () => {
                 $active={active === index}
                 onClick={() => setActive(index)}
               />
-            ))}
+            )
+            )}
           </PortfolioDots>
         </Box>
       </Container>

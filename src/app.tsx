@@ -1,9 +1,11 @@
 import "aos/dist/aos.css";
+import "react-toastify/dist/ReactToastify.css";
 import "./translations"
 
 import React, { useEffect } from "react";
 
 import AOS from "aos";
+import { ToastContainer } from "react-toastify";
 
 import { ThemeProvider } from "@mui/material";
 
@@ -23,6 +25,7 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <ToastContainer />
       <Blobs />
       <Header />
       <About />
