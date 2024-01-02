@@ -25,8 +25,8 @@ export const AvatarStyled = styled(Avatar)`
     margin: 0 auto 32px;
 
     && {
-      height: 200px;
-      width: 200px;
+      height: 220px;
+      width: 220px;
     }
   }
 `;

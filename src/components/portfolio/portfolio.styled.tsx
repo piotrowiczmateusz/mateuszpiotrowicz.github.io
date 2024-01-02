@@ -51,6 +51,7 @@ export const PortfolioDot = styled.button<{ $active: boolean }>`
   display: flex;
   height: 16px;
   margin: 0 16px;
+  padding: 0;
   width: 16px;
 `;
 
