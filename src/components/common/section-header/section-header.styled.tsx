@@ -13,6 +13,7 @@ export const SectionHeaderH2 = styled.h2`
 
   @media ${MOBILE} {
     font-size: 36px;
+    margin: 60px 0;
   }
 `;
 

@@ -15,7 +15,7 @@ export const PortfolioContainer = styled.div`
   position: relative;
 
   @media ${MOBILE} {
-    height: 440px;
+    height: 400px;
   }
 `;
 

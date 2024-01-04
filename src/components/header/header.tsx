@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Spiral as Hamburger } from "hamburger-react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { Container } from "@mui/material";
 
@@ -58,6 +58,13 @@ export const Header = () => {
                 target="_blank"
               >
                 <FaLinkedin />
+              </SocialLink>
+              <SocialLink
+                href={LINKEDIN_URL}
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <FaGithub />
               </SocialLink>
               <LangSwitch onClick={handleChangeLang} type="button">
                 <img alt={otherLang} height="30" src={`${IMAGES_PATH}/${otherLang}.png`} width="30" />

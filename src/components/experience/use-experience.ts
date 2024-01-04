@@ -45,7 +45,7 @@ export const useExperience = () => {
       description: t("experienceHonkiDesc"),
       name: "HONKI Digital Agency",
       period: "2017 - 2018",
-      tech: ["JavaScript", "TypeScript", "Css / Sass", "Bootstrap", "Php"],
+      tech: ["JavaScript", "TypeScript", "Css / Sass", "Bootstrap", "PHP"],
     },
     {
       description: t("experienceMangomediaDesc"),

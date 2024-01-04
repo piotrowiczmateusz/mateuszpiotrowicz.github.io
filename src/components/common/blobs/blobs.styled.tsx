@@ -47,6 +47,7 @@ const movementTwo = keyframes`0%,
 export const BlobsContainer = styled.div`
   align-items: center;
   background: #0e2a47;
+  background: radial-gradient(circle, rgba(14,42,71,1) 0%, rgba(21,59,99,1) 40%, rgba(12,34,58,1) 82%);
   display: flex;
   flex-direction: row;
   justify-content: center;

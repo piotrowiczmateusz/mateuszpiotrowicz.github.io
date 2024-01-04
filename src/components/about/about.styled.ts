@@ -6,19 +6,23 @@ import { MOBILE } from "shared/consts";
 import { COLORS } from "theme/colors";
 
 export const AvatarStyled = styled(Avatar)`
-  border: 4px solid ${COLORS.accent};
+  background-color: rgba(27, 185, 153, 0.85);
+  /* border: 4px solid ${COLORS.accent}; */
 
   && {
     height: 300px;
     width: 300px;
+    overflow: visible;
   }
 
   img {
     transition: transform 0.2s ease-in;
+    filter: grayscale(1);
+    transform: scale(1.1) translateX(25px) translateY(25px);
   }
 
   &:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2) translateX(25px) translateY(25px);
   }
 
   @media ${MOBILE} {

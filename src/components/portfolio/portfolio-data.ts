@@ -33,6 +33,6 @@ export const portfolio = [
     image: "portfolio/small/zut.png",
     link: "https://zutprojekt.eu/",
     linkName: "zutprojekt.eu",
-    name: "Zakład Usług Technicznych Projekt",
+    name: "ZUT 'Projekt'",
   },
 ];

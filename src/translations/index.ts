@@ -12,7 +12,11 @@ i18next.use(initReactI18next).init({
     en: {
       translations: {
         aboutDescription:
-          "In 2013, I created my first website as part of a school project. Over the years I have had the opportunity to work for: creative agencies, start-ups, large corporations and as an independent freelancer. I strive to create solutions that not only present aesthetic design, but above all provide users with functionality and usability. In addition to writing code, I focus on deeply understanding the needs of my clients, which allows me to create solutions tailored to their specific expectations and business goals.",
+          "In 2013, I created my first website as part of a school project. Over the years I have had the opportunity to work for: creative agencies, start-ups, large corporations and as an independent freelancer.",
+        aboutDescription2:
+          "I strive to create solutions that not only present aesthetic design, but above all provide users with functionality and usability.",
+        aboutDescription3:
+          "In addition to writing code, I focus on deeply understanding the needs of my clients, which allows me to create solutions tailored to their specific expectations and business goals.",
         aboutDownload: "Download resume",
         aboutPhoto: "Mateusz Piotrowicz",
         aboutTitle: "Hello!",
@@ -53,7 +57,11 @@ i18next.use(initReactI18next).init({
     pl: {
       translations: {
         aboutDescription:
-          "W 2013 roku stworzyłem swoją pierwszą stronę internetową w ramach szkolnego projektu. Przez lata w branży internetowej miałem okazję pracować dla: agencji kreatywnych, start-upów, dużych korporacji oraz jako niezależny freelancer. Dążę do tworzenia rozwiązań, które nie tylko prezentują estetyczny design, ale przede wszystkim zapewniają użytkownikom funkcjonalność oraz użyteczność. Oprócz pisania kodu, kładę nacisk na głębokie zrozumienie potrzeb moich klientów, co umożliwia mi tworzenie rozwiązań dopasowanych do ich konkretnych oczekiwań i celów biznesowych.",
+          "W 2013 roku stworzyłem swoją pierwszą stronę internetową w ramach szkolnego projektu. Przez lata w branży internetowej miałem okazję pracować dla: agencji kreatywnych, start-upów, dużych korporacji oraz jako niezależny freelancer.",
+        aboutDescription2:
+          "Dążę do tworzenia rozwiązań, które nie tylko prezentują estetyczny design, ale przede wszystkim zapewniają użytkownikom funkcjonalność oraz użyteczność.",
+        aboutDescription3:
+          "Oprócz pisania kodu, kładę nacisk na głębokie zrozumienie potrzeb moich klientów, co umożliwia mi tworzenie rozwiązań dopasowanych do ich konkretnych oczekiwań i celów biznesowych.",
         aboutDownload: "Pobierz CV",
         aboutPhoto: "Mateusz Piotrowicz",
         aboutTitle: "Cześć!",
@@ -79,7 +87,7 @@ i18next.use(initReactI18next).init({
           "W ramach projektu zostały przygotowane różne wersje formularzy wniosków kredytowych dedykowane przedsiębiorcom. Moje odpowiedzialności obejmowały szeroki zakres zadań, począwszy od kodowania i testowania po dokumentację, przegląd kodu oraz współpracę z analitykami, projektantami i innymi zespołami w całej strukturze organizacyjnej. Naszym celem było dostarczenie kompleksowych rozwiązań oraz integracja wielu modułów, co wymagało bliskiej współpracy i koordynacji działań pomiędzy różnymi zespołami. Po udanym wdrożeniu pierwszych wersji formularzy, aplikacja była rozwijana, uwzględniając feedback użytkowników oraz aktualizacje związane z nowymi wymogami regulacyjnymi.",
         experiencePresent: "obecnie",
         experienceScopeDesc:
-          "Klientem w tym projekcie był dostawcą usług związanych z ratingami kredytowymi, analizą funduszy oraz rozwiązaniami dedykowanymi do oceny i monitorowania ryzyka. Moja rola w ramach tego projektu polegała na aktywnym udziale w zespole odpowiedzialnym za tworzenie i rozwijanie aplikacji React oraz rozbudowie funkcjonalności istniejących bibliotek. Moje zadania obejmowały także aktywny udział w tworzeniu architektury mikrofrontendów, co pozwoliło na elastyczne i modularne podejście do budowy aplikacji. Dodatkowo, wdrażałem Design System, które były wykorzystywane w innych modułach projektu, co przyczyniło się do utrzymania spójności interfejsu użytkownika na różnych poziomach aplikacji.",
+          "Klientem w tym projekcie był dostawcą usług związanych z ratingami kredytowymi, analizą funduszy oraz rozwiązaniami dedykowanymi do oceny i monitorowania ryzyka. Moja rola w ramach tego projektu polegała na aktywnym udziale w zespole odpowiedzialnym za tworzenie i rozwijanie aplikacji w React oraz rozbudowie funkcjonalności istniejących bibliotek. Moje zadania obejmowały także aktywny udział w tworzeniu architektury mikrofrontendów, co pozwoliło na elastyczne i modularne podejście do budowy aplikacji. Dodatkowo, wdrażałem Design System, który był wykorzystywany w innych modułach projektu, co przyczyniło się do utrzymania spójności interfejsu użytkownika na różnych poziomach aplikacji.",
         experienceTitle: "Doświadczenie",
         navAbout: "O mnie",
         navContact: "Kontakt",
