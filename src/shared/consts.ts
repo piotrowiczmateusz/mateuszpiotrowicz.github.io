@@ -11,4 +11,4 @@ export const ZLAYERS = {
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/mateusz-piotrowicz-1a2685145/";
 export const GITHUB_URL = "https://github.com/piotrowiczmateusz";
-export const FORMSPREE_URL = "https://submit-form.com/tOddRjKRD";
+export const FORMSPARK_URL = "https://submit-form.com/tOddRjKRD";

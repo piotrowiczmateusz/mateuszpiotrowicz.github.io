@@ -16,7 +16,7 @@ i18next.use(initReactI18next).init({
         aboutDescription2:
           "I strive to create solutions that not only present aesthetic design, but above all provide users with functionality and usability.",
         aboutDescription3:
-          "In addition to writing code, I focus on deeply understanding the needs of my clients, which allows me to create solutions tailored to their specific expectations and business goals.",
+          "I focus on deeply understanding the needs of my clients, which allows me to create solutions tailored to their specific expectations and business goals.",
         aboutDownload: "Download resume",
         aboutPhoto: "Mateusz Piotrowicz",
         aboutTitle: "Hello!",
@@ -61,7 +61,7 @@ i18next.use(initReactI18next).init({
         aboutDescription2:
           "Dążę do tworzenia rozwiązań, które nie tylko prezentują estetyczny design, ale przede wszystkim zapewniają użytkownikom funkcjonalność oraz użyteczność.",
         aboutDescription3:
-          "Oprócz pisania kodu, kładę nacisk na głębokie zrozumienie potrzeb moich klientów, co umożliwia mi tworzenie rozwiązań dopasowanych do ich konkretnych oczekiwań i celów biznesowych.",
+          "Kładę nacisk na głębokie zrozumienie potrzeb moich klientów, co umożliwia mi tworzenie rozwiązań dopasowanych do ich konkretnych oczekiwań i celów biznesowych.",
         aboutDownload: "Pobierz CV",
         aboutPhoto: "Mateusz Piotrowicz",
         aboutTitle: "Cześć!",

@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
-import { FORMSPREE_URL } from "shared/consts";
+import { FORMSPARK_URL } from "shared/consts";
 
 export const useContactForm = () => {
   const { t } = useTranslation();
@@ -42,18 +42,15 @@ export const useContactForm = () => {
     reset,
   } = useForm({ mode: "onSubmit" });
 
-  const getFormData = (object: { [key: string]: string }) =>
-    Object.keys(object).reduce((formData, key) => {
-      formData.append(key, object[key]);
-      return formData;
-    }, new FormData());
-
   const onSubmit = async (data: { [key: string]: string }) => {
     try {
-      const res = await fetch(FORMSPREE_URL, {
-        body: getFormData(data),
+      const res = await fetch(FORMSPARK_URL, {
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
         method: "POST",
-        mode: "no-cors",
+        redirect: "manual",
       });
       if (res) {
         toast.success(t("contactSuccess"));

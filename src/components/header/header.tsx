@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { Container } from "@mui/material";
 
-import { IMAGES_PATH, LINKEDIN_URL } from "shared/consts";
+import { GITHUB_URL, IMAGES_PATH, LINKEDIN_URL } from "shared/consts";
 
 import {
   HamburgerWrapper,
@@ -60,7 +60,7 @@ export const Header = () => {
                 <FaLinkedin />
               </SocialLink>
               <SocialLink
-                href={LINKEDIN_URL}
+                href={GITHUB_URL}
                 rel="noreferrer noopener"
                 target="_blank"
               >
